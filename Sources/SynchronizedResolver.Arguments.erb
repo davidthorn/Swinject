@@ -42,5 +42,14 @@ extension SynchronizedResolver {
         }
     }
 
+    internal func resolve<Service, <%= arg_types %>>(
+        namedServiceType: Service.Type,
+        <%= arg_param_def %>) -> Service.Service? where Service: NamedService
+    {
+        return container.lock.sync {
+            return self.container.resolve(namedServiceType: namedServiceType, <%= arg_param_name %>: <%= arg_param_call %>)
+        }
+    }
+
 <% end %>
 }

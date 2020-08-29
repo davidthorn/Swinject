@@ -35,4 +35,10 @@ extension SynchronizedResolver: Resolver {
             self.container.resolve(serviceType, name: name)
         }
     }
+
+    internal func resolve<Service>(namedServiceType: Service.Type) -> Service.Service? where Service: NamedService {
+        return container.lock.sync {
+            self.container.resolve(namedServiceType: namedServiceType)
+        }
+    }
 }

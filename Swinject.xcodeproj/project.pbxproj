@@ -118,7 +118,20 @@
 		706A459CAE24E0D5054CEC30 /* GraphIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B058F48AF289C3AC307C2F7 /* GraphIdentifier.swift */; };
 		725EF35B0CC5E62791D5EA09 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AFFAC41BA9D02A38BDB7A3 /* Nimble.framework */; };
 		737740CDFB89189DFF5FD165 /* Swinject.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DE57FB3E8228904E6FE0D7 /* Swinject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		741D114024FAF8CC008ABC57 /* Resolver+NamedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D113F24FAF8CC008ABC57 /* Resolver+NamedService.swift */; };
+		741D114424FAFB3A008ABC57 /* NamedServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D114124FAF9EC008ABC57 /* NamedServiceSpec.swift */; };
+		741D114524FAFB3A008ABC57 /* NamedServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D114124FAF9EC008ABC57 /* NamedServiceSpec.swift */; };
+		741D114624FAFB3B008ABC57 /* NamedServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D114124FAF9EC008ABC57 /* NamedServiceSpec.swift */; };
+		741D114724FAFB3B008ABC57 /* NamedServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D114124FAF9EC008ABC57 /* NamedServiceSpec.swift */; };
+		741D114824FAFB63008ABC57 /* NamedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748D5AD224EB450B00D1AE32 /* NamedService.swift */; };
+		741D114924FAFB63008ABC57 /* NamedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748D5AD224EB450B00D1AE32 /* NamedService.swift */; };
+		741D114A24FAFB64008ABC57 /* NamedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748D5AD224EB450B00D1AE32 /* NamedService.swift */; };
+		741D114B24FAFB6A008ABC57 /* Resolver+NamedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D113F24FAF8CC008ABC57 /* Resolver+NamedService.swift */; };
+		741D114C24FAFB6B008ABC57 /* Resolver+NamedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D113F24FAF8CC008ABC57 /* Resolver+NamedService.swift */; };
+		741D114D24FAFB6B008ABC57 /* Resolver+NamedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D113F24FAF8CC008ABC57 /* Resolver+NamedService.swift */; };
+		741D114F24FAFCF6008ABC57 /* ContainerSpec.NamedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D114E24FAFCF6008ABC57 /* ContainerSpec.NamedService.swift */; };
 		744024F52826E2B351B38D58 /* SynchronizedResolver.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1979933FD5852C28F6D8784A /* SynchronizedResolver.Arguments.swift */; };
+		748D5AD324EB450B00D1AE32 /* NamedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748D5AD224EB450B00D1AE32 /* NamedService.swift */; };
 		75A776D4072BCF74F298D818 /* EmploymentAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077047532310E42432E94D83 /* EmploymentAssembly.swift */; };
 		77BF219EAB4FC8475943CECC /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D434EB4C13CF9D9FA6D80CB /* Swinject.framework */; };
 		77E67A2C566A1DFD5407BBA4 /* Container.Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F839BCDE52371FE49454B9 /* Container.Logging.swift */; };
@@ -344,6 +357,10 @@
 		7101AB0DE88A5340F7EAAC04 /* InstanceWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceWrapper.swift; sourceTree = "<group>"; };
 		710204D1A678B791BB0FC60E /* SynchronizedResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedResolver.swift; sourceTree = "<group>"; };
 		7196841DBEB28245AF90D79E /* ContainerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerSpec.swift; sourceTree = "<group>"; };
+		741D113F24FAF8CC008ABC57 /* Resolver+NamedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Resolver+NamedService.swift"; sourceTree = "<group>"; };
+		741D114124FAF9EC008ABC57 /* NamedServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamedServiceSpec.swift; sourceTree = "<group>"; };
+		741D114E24FAFCF6008ABC57 /* ContainerSpec.NamedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerSpec.NamedService.swift; sourceTree = "<group>"; };
+		748D5AD224EB450B00D1AE32 /* NamedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedService.swift; sourceTree = "<group>"; };
 		74A5A3258A20A90BA4C6BBBE /* Pods-Swinject-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swinject-watchOS.release.xcconfig"; path = "Target Support Files/Pods-Swinject-watchOS/Pods-Swinject-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		74DE57FB3E8228904E6FE0D7 /* Swinject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swinject.h; sourceTree = "<group>"; };
 		74FE954435F1C361FB14C24B /* ContainerSpec.CustomScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerSpec.CustomScope.swift; sourceTree = "<group>"; };
@@ -478,6 +495,7 @@
 				EB483EF286681035F8A98F43 /* ContainerSpec.CustomStringConvertible.swift */,
 				5DA24DF3EBEAA57BFC8D8631 /* ContainerSpec.DebugHelper.swift */,
 				1524909CA7B5BFA7E2BEE347 /* ContainerSpec.GraphCaching.swift */,
+				741D114E24FAFCF6008ABC57 /* ContainerSpec.NamedService.swift */,
 				7196841DBEB28245AF90D79E /* ContainerSpec.swift */,
 				A8817F361F89EB6F454B8F89 /* ContainerSpec.TypeForwarding.swift */,
 				077047532310E42432E94D83 /* EmploymentAssembly.swift */,
@@ -485,6 +503,7 @@
 				AEAC51C6D09DEBE863D5A06E /* Info.plist */,
 				330AFD602B38E9D09A67B587 /* LazySpec.swift */,
 				2380F40FC2B9229F36B13679 /* LoadAwareAssembly.swift */,
+				741D114124FAF9EC008ABC57 /* NamedServiceSpec.swift */,
 				D7B00D2ED19209D0C6210169 /* Person.swift */,
 				0AF3AB0ED5AFE7A82E85EC5C /* ProviderSpec.swift */,
 				D794CFA41AB11452E4FC6B48 /* ServiceEntrySpec.swift */,
@@ -622,7 +641,9 @@
 				7101AB0DE88A5340F7EAAC04 /* InstanceWrapper.swift */,
 				A79864FE285C06A91E006806 /* ObjectScope.Standard.swift */,
 				957AFDACC07687608E5E5F7E /* ObjectScope.swift */,
+				748D5AD224EB450B00D1AE32 /* NamedService.swift */,
 				EC379E27E9804FC6C0BA0842 /* Resolver.swift */,
+				741D113F24FAF8CC008ABC57 /* Resolver+NamedService.swift */,
 				76238B6105E2E443A94CE595 /* ServiceEntry.swift */,
 				54FFC812F14E9976208B644F /* ServiceEntry.TypeForwarding.swift */,
 				BD2ED5B0128132DCD709777F /* ServiceKey.swift */,
@@ -1103,6 +1124,7 @@
 			files = (
 				602201FE3E6CC64F594DEBA1 /* Assembler.swift in Sources */,
 				A5D9F0A6D8FC89662658FBF3 /* Assembly.swift in Sources */,
+				741D114D24FAFB6B008ABC57 /* Resolver+NamedService.swift in Sources */,
 				FE07C0CCCD45639FBF85A456 /* Behavior.swift in Sources */,
 				9FF7BABC0BA21A89A755E37C /* Container.Arguments.swift in Sources */,
 				363C4230CAC4547E7A676249 /* Container.Logging.swift in Sources */,
@@ -1120,6 +1142,7 @@
 				513BDFB32DCE5B048672C33D /* ServiceEntry.swift in Sources */,
 				A39172D39FE39D24A12A7257 /* ServiceKey.swift in Sources */,
 				2E8EB4C1459E0B1047E08338 /* SpinLock.swift in Sources */,
+				741D114A24FAFB64008ABC57 /* NamedService.swift in Sources */,
 				C9F920F9CEDCD69113D85834 /* SynchronizedResolver.Arguments.swift in Sources */,
 				D0668C3AB5ED89951B60DA2E /* SynchronizedResolver.swift in Sources */,
 				68DA3B5FB308092FE9B5C733 /* UnavailableItems.swift in Sources */,
@@ -1139,6 +1162,7 @@
 				A197085CE442365D732EE6FE /* ContainerSpec.Arguments.swift in Sources */,
 				DCF03B6DB8F99A474F2B575C /* ContainerSpec.Behavior.swift in Sources */,
 				030256DFF226FE93C75833F5 /* ContainerSpec.Circularity.swift in Sources */,
+				741D114F24FAFCF6008ABC57 /* ContainerSpec.NamedService.swift in Sources */,
 				88D3BB9CECA9F373FF882AFB /* ContainerSpec.CustomScope.swift in Sources */,
 				87FB12D90646AFA5AC739B15 /* ContainerSpec.CustomStringConvertible.swift in Sources */,
 				229E0EAD0D8413D4CA67094C /* ContainerSpec.DebugHelper.swift in Sources */,
@@ -1146,6 +1170,7 @@
 				2A207632400E46F722193C7E /* ContainerSpec.TypeForwarding.swift in Sources */,
 				A9E5D5915FE433CD1DCD0022 /* ContainerSpec.swift in Sources */,
 				1276420B3D3ED5ACFC2C5B4F /* EmploymentAssembly.swift in Sources */,
+				741D114524FAFB3A008ABC57 /* NamedServiceSpec.swift in Sources */,
 				0266A3114C82246F18B52860 /* Food.swift in Sources */,
 				5E22405979EC888E46F0CF8D /* LazySpec.swift in Sources */,
 				471EEA7C90D1AEA45CAC0236 /* LoadAwareAssembly.swift in Sources */,
@@ -1177,6 +1202,7 @@
 				2AED444F7141B101091A1464 /* ContainerSpec.TypeForwarding.swift in Sources */,
 				07C2E78624A40118D0316CB6 /* ContainerSpec.swift in Sources */,
 				75A776D4072BCF74F298D818 /* EmploymentAssembly.swift in Sources */,
+				741D114424FAFB3A008ABC57 /* NamedServiceSpec.swift in Sources */,
 				44676A0D0399F323A31E0451 /* Food.swift in Sources */,
 				019AF80A06CA3271456549BE /* LazySpec.swift in Sources */,
 				4D35CD2C4FD5788F087A4D51 /* LoadAwareAssembly.swift in Sources */,
@@ -1208,6 +1234,7 @@
 				BB35F3F717A09AD398FCC67A /* ContainerSpec.TypeForwarding.swift in Sources */,
 				1BD861CA392B1E63D249906B /* ContainerSpec.swift in Sources */,
 				3A41F4B375C1CE29A75F6AE9 /* EmploymentAssembly.swift in Sources */,
+				741D114724FAFB3B008ABC57 /* NamedServiceSpec.swift in Sources */,
 				115515373F266C35E8DBE724 /* Food.swift in Sources */,
 				62BE8825EF3E272428AC3CB5 /* LazySpec.swift in Sources */,
 				BA36EC78ECA2701853CD3E12 /* LoadAwareAssembly.swift in Sources */,
@@ -1239,6 +1266,7 @@
 				4077A7732A2412CBB9E8A759 /* ContainerSpec.TypeForwarding.swift in Sources */,
 				41084A2F24BB4222CCFFAD27 /* ContainerSpec.swift in Sources */,
 				1613AE7671758A85F760C5DF /* EmploymentAssembly.swift in Sources */,
+				741D114624FAFB3B008ABC57 /* NamedServiceSpec.swift in Sources */,
 				4736BF9B29704061B29BFACD /* Food.swift in Sources */,
 				B02AEA6ED72703B0F2FFE7C5 /* LazySpec.swift in Sources */,
 				D210E7349E119368A741DB2F /* LoadAwareAssembly.swift in Sources */,
@@ -1257,6 +1285,7 @@
 			files = (
 				474A4D73269D7BDF0844D704 /* Assembler.swift in Sources */,
 				81AE1BCE31BC99440151A68F /* Assembly.swift in Sources */,
+				741D114C24FAFB6B008ABC57 /* Resolver+NamedService.swift in Sources */,
 				2C838FEC75D618B575750A17 /* Behavior.swift in Sources */,
 				1DB36B1F8919879607F67F35 /* Container.Arguments.swift in Sources */,
 				9D78DAAC0307D9422C501D33 /* Container.Logging.swift in Sources */,
@@ -1274,6 +1303,7 @@
 				1A2759577A52C96E28BB44F0 /* ServiceEntry.swift in Sources */,
 				AEE58DEFB1764391B49E4EA0 /* ServiceKey.swift in Sources */,
 				CC57D5BBD5945E37B704B7B4 /* SpinLock.swift in Sources */,
+				741D114924FAFB63008ABC57 /* NamedService.swift in Sources */,
 				3F48DF31B4FAB90048A44A04 /* SynchronizedResolver.Arguments.swift in Sources */,
 				31FF42AD5DFDB5FD7FAB5530 /* SynchronizedResolver.swift in Sources */,
 				58654C80A0946909D44F6BAD /* UnavailableItems.swift in Sources */,
@@ -1287,6 +1317,7 @@
 			files = (
 				8F8BF2FFD2D666C4EE71E796 /* Assembler.swift in Sources */,
 				695E6FF61B8CD35434685835 /* Assembly.swift in Sources */,
+				741D114B24FAFB6A008ABC57 /* Resolver+NamedService.swift in Sources */,
 				4D667425CB08BF894C1A78AA /* Behavior.swift in Sources */,
 				5BAC0A607F822D6205DA6178 /* Container.Arguments.swift in Sources */,
 				40FCA2AB08F4EA23096075AB /* Container.Logging.swift in Sources */,
@@ -1304,6 +1335,7 @@
 				35C9BCE88B6D6567760D7389 /* ServiceEntry.swift in Sources */,
 				3957BFF436703E5C0434D41E /* ServiceKey.swift in Sources */,
 				4C44517A43BAAFB8E4E99255 /* SpinLock.swift in Sources */,
+				741D114824FAFB63008ABC57 /* NamedService.swift in Sources */,
 				DC0704139B41CA402DF1922A /* SynchronizedResolver.Arguments.swift in Sources */,
 				9CEB151A9DB8675B5AB48432 /* SynchronizedResolver.swift in Sources */,
 				95070453A9934F08F9E02E6C /* UnavailableItems.swift in Sources */,
@@ -1317,6 +1349,7 @@
 			files = (
 				FED7D8B8C74876D03B5D09DE /* Assembler.swift in Sources */,
 				5010597DD8C25E6684C8087E /* Assembly.swift in Sources */,
+				741D114024FAF8CC008ABC57 /* Resolver+NamedService.swift in Sources */,
 				C60108843AA83DF2B408EE87 /* Behavior.swift in Sources */,
 				AD91C0A080A7CE74369407E7 /* Container.Arguments.swift in Sources */,
 				77E67A2C566A1DFD5407BBA4 /* Container.Logging.swift in Sources */,
@@ -1334,6 +1367,7 @@
 				808983B2AF095E481615029E /* ServiceEntry.swift in Sources */,
 				E28F56015BFBB47A791856D3 /* ServiceKey.swift in Sources */,
 				7C87F64B425D439EFB2B9A07 /* SpinLock.swift in Sources */,
+				748D5AD324EB450B00D1AE32 /* NamedService.swift in Sources */,
 				744024F52826E2B351B38D58 /* SynchronizedResolver.Arguments.swift in Sources */,
 				FAEDCCC2810D4FD8A7A7AF8D /* SynchronizedResolver.swift in Sources */,
 				4D631FA98F95F809740D6585 /* UnavailableItems.swift in Sources */,

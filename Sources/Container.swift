@@ -115,6 +115,25 @@ public final class Container {
         return _register(serviceType, factory: factory, name: name)
     }
 
+    /// Adds a registration for the specified named service with the factory closure to specify how the service is
+    /// resolved with dependencies.
+    ///
+    /// - Parameters:
+    ///   - namedService: The named service to register
+    ///   - factory:     The closure to specify how the service type is resolved with the dependencies of the type.
+    ///                  It is invoked when the `Container` needs to instantiate the instance.
+    ///                  It takes a `Resolver` to inject dependencies to the instance,
+    ///                  and returns the instance of the component type for the service.
+    ///
+    /// - Returns: A registered `ServiceEntry` to configure more settings with method chaining.
+    @discardableResult
+    public func register<Service>(
+        namedServiceType: Service.Type,
+        factory: @escaping (Resolver) -> Service.Service
+    ) -> ServiceEntry<Service.Service> where Service: NamedService {
+        return _register(namedServiceType.type, factory: factory, name: namedServiceType.name)
+    }
+
     /// This method is designed for the use to extend Swinject functionality.
     /// Do NOT use this method unless you intend to write an extension or plugin to Swinject framework.
     ///
@@ -281,6 +300,17 @@ extension Container: Resolver {
     ///            is found in the `Container`.
     public func resolve<Service>(_: Service.Type, name: String?) -> Service? {
         return _resolve(name: name) { (factory: (Resolver) -> Any) in factory(self) }
+    }
+
+    /// Retrieves the instance with the specified named service type and registration name.
+    ///
+    /// - Parameters:
+    ///   - serviceType: The named service type to resolve.
+    ///
+    /// - Returns: The resolved named service type instance, or nil if no registration for the service type
+    ///            is found in the `Container`.
+    public func resolve<Service>(namedServiceType: Service.Type) -> Service.Service? where Service: NamedService {
+        return _resolve(name: namedServiceType.name) { (factory: (Resolver) -> Any) in factory(self) }
     }
 
     fileprivate func getEntry(for key: ServiceKey) -> ServiceEntryProtocol? {
