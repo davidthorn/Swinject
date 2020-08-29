@@ -44,6 +44,24 @@ extension Container {
         return _register(serviceType, factory: factory, name: name)
     }
 
+    /// Adds a registration for the specified named service with the factory closure to specify how the service is resolved with dependencies.
+    ///
+    /// - Parameters:
+    ///   - serviceType: The named service type to register.
+    ///   - factory:     The closure to specify how the service type is resolved with the dependencies of the type.
+    ///                  It is invoked when the `Container` needs to instantiate the instance.
+    ///                  It takes a `Resolver` instance and <%= arg_description %> to inject dependencies to the instance,
+    ///                  and returns the instance of the component type for the service.
+    ///
+    /// - Returns: A registered `ServiceEntry` to configure more settings with method chaining.
+    @discardableResult
+    public func register<Service, <%= arg_types %>>(
+        namedServiceType: Service.Type,
+        factory: @escaping (Resolver, <%= arg_types %>) -> Service.Service) -> ServiceEntry<Service.Service> where Service: NamedService
+    {
+        return _register(namedServiceType.type, factory: factory, name: namedServiceType.name)
+    }
+
 <% end %>
 }
 
@@ -69,6 +87,21 @@ extension Container {
         <%= arg_param_def %>) -> Service?
     {
         return resolve(serviceType, name: nil, <%= arg_param_name %>: <%= arg_param_call %>)
+    }
+
+    /// Retrieves the instance with the specified named service type and <%= arg_param_description %> to the factory closure.
+    ///
+    /// - Parameters:
+    ///   - serviceType: The named service type to resolve.
+    ///   - <%= arg_param_name %>:   <%= arg_param_description.capitalize %> to pass to the factory closure.
+    ///
+    /// - Returns: The resolved named service type instance, or nil if no registration for the service type
+    ///            and <%= arg_param_description %> is found in the `Container`.
+    public func resolve<Service, <%= arg_types %>>(
+        namedServiceType: Service.Type,
+        <%= arg_param_def %>) -> Service.Service? where Service: NamedService
+    {
+        return resolve(namedServiceType.type, name: namedServiceType.name, <%= arg_param_name %>: <%= arg_param_call %>)
     }
 
     /// Retrieves the instance with the specified service type, <%= arg_param_description %> to the factory closure and registration name.

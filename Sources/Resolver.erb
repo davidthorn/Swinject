@@ -33,6 +33,14 @@ public protocol Resolver {
     /// - Returns: The resolved service type instance, or nil if no service with the name is found.
     func resolve<Service>(_ serviceType: Service.Type, name: String?) -> Service?
 
+    /// Retrieves the instance with the specified named service type.
+    ///
+    /// - Parameters:
+    ///   - serviceType: The named service type to resolve.
+    ///
+    /// - Returns: The resolved service type instance, or nil if no service with the name is found.
+    func resolve<Service>(namedServiceType: Service.Type) -> Service.Service? where Service: NamedService
+
 <% (1..arg_count).each do |i| %>
 <%   arg_types = (1..i).map { |n| "Arg#{n}" }.join(", ") %>
 <%   arg_param = i == 1 ? "argument: Arg1" : "arguments arg1: Arg1, " + (2..i).map{ |n| "_ arg#{n}: Arg#{n}" }.join(", ") %>
@@ -63,6 +71,18 @@ public protocol Resolver {
         _ serviceType: Service.Type,
         name: String?,
         <%= arg_param %>) -> Service?
+
+    /// Retrieves the instance with the specified named service type and <%= arg_param_description %> to the factory closure.
+    ///
+    /// - Parameters:
+    ///   - serviceType: The named service type to resolve.
+    ///   - <%= arg_param_name %>:   <%= arg_param_description.capitalize %> to pass to the factory closure.
+    ///
+    /// - Returns: The resolved named service type instance, or nil if no registration for the service type
+    ///            and <%= arg_param_description %> is found in the `Container`.
+    func resolve<Service, <%= arg_types %>>(
+        namedServiceType: Service.Type,
+        <%= arg_param %>) -> Service.Service? where Service: NamedService
 
 <% end %>
 
